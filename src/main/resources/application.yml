@@ -2,11 +2,11 @@ spring:
   application:
     name: AddressService
   datasource:
-    url: jdbc:mysql://localhost:3306/spb430
-    username: root
-    password: 12345
+    url: jdbc:postgresql://dpg-d1gifiil9vc73ampq0g-a:5432/pp_8n61
+    username: pp_8n61_user
+    password: zAd8h00JbOYSthb9CpZ4SVGwyfPyEfjx
   jpa:
     hibernate:
       ddl-auto: update
-server:
-  port: 8082
+  server:
+    port: 8082
