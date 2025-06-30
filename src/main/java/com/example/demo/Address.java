@@ -3,12 +3,16 @@ package com.example.demo;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
-@Table
+@Table(name = "address")
 public class Address {
 
+	
 	@Id
+    	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int hno;
 	private String name;
 	private String city;
