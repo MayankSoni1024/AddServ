@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 public class AddressController {
 
-	@Autowired(required = false)
+	@Autowired
 	MyRepo repo;
 	@GetMapping("/address")
 	public List<Address> show(){
