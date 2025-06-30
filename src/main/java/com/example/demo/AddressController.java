@@ -22,7 +22,7 @@ public class AddressController {
 	{
 		return this.repo.save(ad);
 	}
-	@DeleteMapping("/address")
+	@DeleteMapping("/address/{hno}")
 	public String deleteByHno(@PathVariable int hno)
 	{
 		if(this.repo.findByHno(hno)!=null)
