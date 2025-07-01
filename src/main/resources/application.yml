@@ -2,12 +2,31 @@ spring:
   application:
     name: AddressService
   datasource:
+
     url: jdbc:postgresql://dpg-d1gifiil9vc73ampq0g-a.oregon-postgres.render.com:5432/pp_8n61
     username: pp_8n61_user
     password: zAd8h00JbOYSthb9CpZ4SVGwyfPyEfjx
     driver-class-name: org.postgresql.Driver
+
+    # Add connection pool settings for better reliability
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+      minimum-idle: 1
+      idle-timeout: 300000
+      max-lifetime: 1200000
   jpa:
+    show-sql: true
     hibernate:
       ddl-auto: update
 server:
   port: 8082
+
+
+
+# Add logging configuration for better debugging
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    com.zaxxer.hikari: DEBUG
