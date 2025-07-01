@@ -3,7 +3,8 @@ spring:
     name: AddressService
   datasource:
     # Use the Internal Database URL from Render for better performance
-    url: jdbc:postgresql://dpg-d1gifiili9vc73ampq0g-a.oregon-postgres.render.com:5432/pp_8n61
+    #url: jdbc:postgresql://dpg-d1gifiili9vc73ampq0g-a.oregon-postgres.render.com:5432/pp_8n61
+    url:postgresql://pp_8n61_user:zAd8h00JbOYSthb9CpZ4SVGwyfPyEfjx@dpg-d1gifiili9vc73ampq0g-a/pp_8n61
     username: pp_8n61_user
     password: zAd8h00JbOYSthb9CpZ4SVGwyfPyEfjx
     driver-class-name: org.postgresql.Driver
