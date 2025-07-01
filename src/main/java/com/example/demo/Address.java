@@ -5,12 +5,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "address1")
 public class Address {
-
 	@Id
 	private int hno;
-	private String name;
+	private String street;
 	private String city;
 	public int getHno() {
 		return hno;
@@ -18,21 +17,17 @@ public class Address {
 	public void setHno(int hno) {
 		this.hno = hno;
 	}
-	public String getName() {
-		return name;
+	public String getStreet() {
+		return street;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setStreet(String street) {
+		this.street = street;
 	}
 	public String getCity() {
 		return city;
 	}
 	public void setCity(String city) {
 		this.city = city;
-	}
-	@Override
-	public String toString() {
-		return "Address [hno=" + hno + ", name=" + name + ", city=" + city + "]";
 	}
 	
 }

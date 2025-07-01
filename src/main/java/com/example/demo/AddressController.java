@@ -8,14 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class AddressController {
 
-	@Autowired(required = false)
+	@Autowired
 	MyRepo repo;
 	@GetMapping("/address")
-	public List<Address> show(){
-		 return this.repo.findAll();
+	public List<Address> show()
+	{
+		return this.repo.findAll();
 	}
 	@PostMapping("/address")
 	public Address addAddress(@RequestBody Address ad)
