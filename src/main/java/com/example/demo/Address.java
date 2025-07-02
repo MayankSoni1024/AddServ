@@ -12,7 +12,6 @@ import jakarta.persistence.GenerationType;
 public class Address {
 
 	@Id
-    	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int hno;
 	private String street;
 	private String city;
