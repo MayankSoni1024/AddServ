@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-d1gifiil9vc73ampq0g-a:5432/pp_8n61
+    url: jdbc:postgresql://dpg-d1gifiili9vc73ampq0g-a.oregon-postgres.render.com/pp_8n61
     username: pp_8n61_user
     password: zAd8h00JbOYSthb9CpZ4SVGwyfPyEfjx
     driver-class-name: org.postgresql.Driver
